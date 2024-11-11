@@ -1,0 +1,100 @@
+body {
+    background-color:rgb(143, 194, 226);
+}
+h1 {
+    color:black; 
+    font-size: 40px;
+}
+.slide-in {
+    position: relative;
+    animation: slide-in 1s forwards; /* Duración de la animación */
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%); /* Comienza fuera de la pantalla a la izquierda */
+        opacity: 0; /* Comienza invisible */
+    }
+    to {
+        transform: translateX(0); /* Termina en su posición original */
+        opacity: 1; /* Termina visible */
+    }
+}
+.container {
+    background-color: white;
+    margin-left: 430px;
+    margin-right: 430px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 450px;
+    height: 500px;
+}
+#loginForm {
+
+}
+#container1 {
+opacity: 0;
+transition: 3s ease;
+}
+.logo {
+    width: 370px; 
+    height: 150px; 
+    margin-top: 35px;
+}
+.image1 {
+    display:flex; 
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: -80px;
+
+}
+.labelUser, .labelPassword {
+    color:black; 
+    font-size: 25px;
+    font-style:italic;
+    font-style:unset;
+}
+.login {
+    display: flex;
+    justify-content: center;
+}
+input[type="submit"] {
+    width: 150px;
+    height: 50px;
+    font-size: 20px; 
+    background-color:rgb(146, 66, 66);
+    color: white;
+    transition: background-color 0.5s ease;
+}
+input[type="submit"]:hover {
+    background-color: rgb(82, 210, 214);
+}
+.btAcceder {
+    display: flex;
+    justify-content: center;
+}
+input[type="text"] {
+    width: 400px;
+    height: 25px;
+    font-size: 20px;
+}
+input[type="password"] {
+        width: 400px;
+        height: 25px;
+        font-size: 20px;
+}
+.footerLogin {
+    display: flex;
+    justify-content: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse; /* Colapsa los bordes para que se vean como una sola línea */
+}
+th, td {
+    padding: 8px;
+    border: 1px solid #333; /* Define el grosor, estilo y color de los bordes */
+    text-align: center;
+}
+th {
+    background-color: #f4f4f4; /* Color de fondo para los encabezados */
+}
