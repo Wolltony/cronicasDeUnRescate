@@ -1,0 +1,68 @@
+.reportColor {
+    background-color: burlywood;
+    background-image: url('patronHuellitas.png');
+    background-position: left;
+    background-size: 600px 600px;
+    margin: 0;
+}
+.reportContainer {
+    background-color: rgb(255, 255, 255); /* Fondo blanco con transparencia */
+    color: #333;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    max-width: 1090px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    top: 80px; 
+    height: 370px;
+}
+table {
+    width: 1100px;
+    position: relative; 
+    bottom: 160px;   
+}
+td {
+    text-align: start;
+}
+.tituloTabla {
+    background-color: dimgray;
+    width: 600px;
+    height: 100px;
+    position: absolute;
+    left: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 90%;
+    top: 8px;
+}
+h1 {
+  display:flex;
+  justify-content: start;
+  position: relative;
+  left: 70px;  
+  font-size: 340%;
+  padding: 0px;
+  bottom: 20px;
+  margin-bottom: 30px;
+  color: white;
+  text-shadow: 13px, 15px, 30px, black;
+}
+.formContainer {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(180, 56, 10, 0.699);
+    position:relative; 
+    top: 120px;
+    left: 50px;
+    width:1100px; 
+    height: 60px;
+    padding: 1%; 
+}

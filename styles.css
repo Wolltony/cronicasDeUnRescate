@@ -4,6 +4,7 @@ body {
 h1 {
     color:black; 
     font-size: 40px;
+    font-family: monospace;
 }
 .slide-in {
     position: relative;
@@ -25,15 +26,13 @@ h1 {
     margin-right: 430px;
     border-radius: 10%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    width: 450px;
+    width: 470px;
     height: 500px;
-}
-#loginForm {
-
 }
 #container1 {
 opacity: 0;
 transition: 3s ease;
+height: 400px;
 }
 .logo {
     width: 370px; 
@@ -48,10 +47,14 @@ transition: 3s ease;
 
 }
 .labelUser, .labelPassword {
+    font-family: monospace;
     color:black; 
     font-size: 25px;
     font-style:italic;
     font-style:unset;
+    display: flex; 
+    flex-direction: right;
+    top: 80px;
 }
 .login {
     display: flex;
@@ -76,25 +79,28 @@ input[type="text"] {
     width: 400px;
     height: 25px;
     font-size: 20px;
+    position: relative;
+    bottom: -10px;
+ 
 }
 input[type="password"] {
         width: 400px;
         height: 25px;
         font-size: 20px;
+        position: relative; 
+        bottom: -10px;
 }
 .footerLogin {
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 60px;
+
 }
-table {
-    width: 100%;
-    border-collapse: collapse; /* Colapsa los bordes para que se vean como una sola línea */
+.container2 {
+    position: relative;
+    bottom: 75px; 
 }
-th, td {
-    padding: 8px;
-    border: 1px solid #333; /* Define el grosor, estilo y color de los bordes */
-    text-align: center;
-}
-th {
-    background-color: #f4f4f4; /* Color de fondo para los encabezados */
-}
+
+
+

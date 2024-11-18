@@ -3,82 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Principal</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Reporte padrinos</title>
+    <link rel="stylesheet" href="reportStyles.css">
 </head>
-<body>
-    <h1>Reporte de padrinos</h1>
-    <form action="ruta_de_tu_servidor" method="POST">
-        <label for="id">ID</label>
-        <input type="text" id="id" name="id" required>
-        <br><br>
-
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br><br>
-
-        <label for="email">Donación mensual</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-
-        <label for="telefono">Donación realizada</label>
-        <input type="tel" id="telefono" name="telefono">
-        <br><br>
-
-        <label for="direccion">Dirección:</label>
-        <textarea id="direccion" name="direccion"></textarea>
-        <br><br>
-
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th> 
-                <th>Donación Mensual</th> <!-- Aquí va el monto de la donación mensual -->
-                <th>Donación realizada</th> <!-- Este campo va a contener un valor boolean true/false-->  
-                <th>Fecha donación</th>
-                <th>Ahijado</th> <!-- Aquí va el nombre del perro apadrinado.-->
-                <th>Cumpleaños</th> <!-- La fecha de cumpleaños del donante.-->
-                <th>Teléfono</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Carlos Francisco Caballero Gutiérrez</td>
-                <td>1000</td>
-                <td>Sí</td>
-                <td>2024-10-26</td>
-                <td>Zoe</td>
-                <td>2024-10-26</td>
-                <td>6565937799</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Carlos Francisco Caballero Gutiérrez</td>
-                <td>1000</td>
-                <td>Sí</td>
-                <td>2024-10-26</td>
-                <td>Zoe</td>
-                <td>27/01/1994</td>
-                <td>6565937799</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Carlos Francisco Caballero Gutiérrez</td>
-                <td>1000</td>
-                <td>Sí</td>
-                <td>2024-10-26</td>
-                <td>Zoe</td>
-                <td>27/01/1994</td>
-                <td>6565937799</td>
-            </tr>
-        </tbody>
-    </table>
-    <button type="submit">Guardar</button>
-    <button type="submit">Editar</button>
-    <button type="submit">Eliminar</button>
-    <button type="submit">Realizado</button>
-<script src="script.js"></script>   
+<body class="reportColor">
+<div class="tituloTabla">
+<h1>Reporte de Padrinos</h1>
+</div>
+<div class="formContainer">
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre del padrino">
+</form>
+</div>
+<div class="reportContainer">
+<div class="reportTable">
+ <table border="1">
+  <thead>
+    <tr>  
+       <th>Nombre</th>  
+       <th>Cumpleaños</th>
+       <th>Ahijado</th>
+       <th>Teléfono</th>
+       <th>Donación</th>
+     </tr>    
+  </thead>  
+  <tbody>
+    <tr>
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Realizada</td>
+    </tr>
+  </tbody>  
+ </table>
+</div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
