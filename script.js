@@ -13,4 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.getElementById("loginForm").addEventListener("submit", function() {
     document.getElementById("fUsuario").blur(); // Quita el enfoque del campo
-});
+}); 
+
+
+
