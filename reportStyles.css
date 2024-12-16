@@ -13,7 +13,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: absolute;
-    left:10%; 
+    left:5%; 
     top:40%;
     height: 70%;
     width: 80%;
@@ -38,6 +38,7 @@ td {
     border-bottom-right-radius: 10px;
     opacity: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
 }
 h1 {
   display:flex;
@@ -53,19 +54,28 @@ h1 {
 }
 .buttonsSet {
     position: absolute;
-    bottom: -24%;
-    right:9%;
-    display:flex;
-    align-items: center;
-    height: 17%;
-    width: 60%;
+    top:40%;
+    left: 86%;
+    height: 18%;
+    width: 15%;
 }
-button{
-    width: 25%;
+button {
+    display:flex;
+    justify-content: center;
+    width: 80%;
     height: 50%;
-    margin: 1%;
+    margin: 15%;
+    margin-bottom: 20%;
+    margin-left: 0;
     padding: 0;
+    padding-bottom: 8%;
     border-radius: 10px;
+    top: 90%;
+    right: 50%;
+    display: flex;
+    align-items: end;
+    color:rgb(255, 255, 255);
+    font-size: large;
 }
 footer {
     position: absolute;
