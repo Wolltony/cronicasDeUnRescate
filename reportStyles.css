@@ -1,5 +1,5 @@
 .reportColor {
-    background-color: burlywood;
+    background-color:rgb(143, 194, 226);
     background-image: url('patronHuellitas.png');
     background-position: left;
     background-size: 600px 600px;
@@ -28,7 +28,7 @@ td {
     text-align: start;
 }
 .tituloTabla {
-    background-color: rgb(190, 35, 24);
+    background-color: rgb(150, 93, 93);
     width: 100%;
     height:15%; 
     position: fixed;
@@ -74,10 +74,39 @@ button {
     right: 50%;
     display: flex;
     align-items: end;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     font-size: large;
+    cursor: pointer;
 }
 footer {
     position: absolute;
     bottom: -30%;
+}
+.formContainer {
+    position:absolute;
+    background-color: chartreuse;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    height: 24%;
+    top:15%;
+}
+.idField {
+    grid-column: 1;
+    grid-row: 1;
+    position: absolute;
+    left: 2.5%;
+    align-items: center;
+}
+#idNumber {
+    width: 10%;
+}
+.emailField {
+    grid-column: 1;
+    grid-row: 2;
+}
+.phoneField {
+    grid-column: 1;
+    grid-row: 3;
 }
