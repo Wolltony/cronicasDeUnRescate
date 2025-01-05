@@ -9,40 +9,53 @@
 <body class="reportColor">
 <div class="tituloTabla">
 <h1>Reporte de Padrinos</h1>
+<input type="text" id="searchInput" placeholder="Buscar..." oninput="filterResults()">
 </div>
 <div class="formContainer">
   <div class="idField">
    <label for="idNumber">ID </label>
    <input type="text" id="idNumber">
   </div>
-  <div class="emailField">
-   <label for="email">Nombre </label>
-   <input type="email" id="email" placeholder="Escriba un correo">
+  <div class="nameField">
+   <label for="name">Nombre </label>
+   <input type="text" id="name" placeholder="Escriba un correo">
+  </div>
+  <div class="gcField">
+   <label for="gc">Ahijado </label>
+   <input type="text" id="gc" placeholder="Nombre del ahijado">
   </div>
   <div class="phoneField">
-   <label for="phone">Teléfono </label>
-   <input type="tel" id="phone" placeholder="Escriba un teléfono">
-  </div>
+    <label for="phone">Telefono </label>
+    <input type="text" id="phone" placeholder="Telefono del padrino">
+   </div>
+   <div class="bdField">
+    <label for="bd">Cumpleanos </label>
+    <input type="text" id="bd" placeholder="Cumpleanos del ahijado">
+   </div>
 </div>
 <div class="reportContainer">
 <div class="reportTable">
  <table border="1">
   <thead>
-    <tr>  
+    <tr>
+       <th>Id</th> 
        <th>Nombre</th>  
        <th>Cumpleaños</th>
        <th>Ahijado</th>
        <th>Teléfono</th>
        <th>Donación</th>
+       <th>Monto</th> 
      </tr>    
   </thead>  
   <tbody>
     <tr>
+      <th>1</th> 
       <td>Carlos Caballero</td>
       <td>01/27/1994</td>
       <td>Zoe</td>
       <td>6565937799</td>
-      <td>Realizada</td>
+      <td>Realizada</td>\
+      <th>1000</th> 
     </tr>
   </tbody>  
  </table>
